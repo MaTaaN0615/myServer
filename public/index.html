@@ -11,14 +11,16 @@
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css"> 
 </head>
 <body ng-controller="mainCtrl">
-	<br>
-	<table class="table table-bordered">
+
+	<br> <h1><center>BOOK CENTER </center>
+			</h1> <br>
+		<table class="table table-condensed">
 		<thead>
-			<th>Title</th>
-			<th>Price</th>
+			<th class="info">Title</th>
+			<th class="info">Price</th>
 		</thead>
 		<tbody>
-			<tr class="success" ng-repeat="book in books">
+			<tr class="warning" ng-repeat="book in books">
 				<td>{{book.title}}</td>
 				<td>{{book.price | currency: 'B'}}</td>
 			</tr>
