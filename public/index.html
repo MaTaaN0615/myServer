@@ -17,13 +17,13 @@
 		<table class="table table-condensed text-center">
 		<thead>
 			<th class="info text-center">Title</th>
-			<th class="info text-center">Artist</th>
+			<th class="info text-center">Author</th>
 			<th class="info text-center">Price</th>
 		</thead>
 		<tbody>
 			<tr class="warning" ng-repeat="book in books">
 				<td>{{book.title}}</td>
-				<td>{{book.artist}}</td>
+				<td>{{book.author}}</td>
 				<td>{{book.price | currency: 'B'}}</td>
 			</tr>
 		</tbody>
