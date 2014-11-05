@@ -5,10 +5,9 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/api/book', function(req, res){
 	var books = [
-		{title: 'Angular',author: 'NUTCHA', price: 800},
-		{title: 'Node.js',author: 'NATTY' , price: 600},
-		{title: 'CSS' ,author: 'NOTCY', price: 500},
-
+		{title: 'Angular',author: 'NUTCHA', price: 800 ,img:'img/angular.jpg'},
+		{title: 'Node.js',author: 'NATTY' , price: 600,img:'img/node.jpg'},
+		{title: 'CSS' ,author: 'NOTCY', price: 500,img:'img/css.jpg'},
 	];
 	res.send(books);
 })
